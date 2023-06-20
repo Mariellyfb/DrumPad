@@ -18,10 +18,7 @@ const tomlSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS
 
 const tommSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-mid.wav");
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.getElementsByClassName("botones");
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        crashSound.play();
-    });
-  });
+
+  
