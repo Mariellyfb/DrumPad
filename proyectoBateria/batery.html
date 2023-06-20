@@ -1,65 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My Batery </title><!-- Insertar icono para el nombre de la aplicación-->
-</head>
-<body>
-
+    <!-- Insertar icono para el nombre de la aplicación-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- cabecera con el título principal (evaluar la posibilidad de ponerle un color o una imagen de fondo al header)-->
     <header>
-        <h1 id="cabecera">MY BATERY</h1>
+      <h1 id="cabecera">MY BATERY</h1>
     </header>
 
     <!-- Main que contiene 3 secciones -->
     <main>
+      <!-- primera sección con la imagen de la batería -->
+      <section>
+        <figure id="instrumento">
+          <!--  <img src="img/batery.webp" alt="Imágen de una batería"> -->
+        </figure>
+      </section>
 
-        <!-- primera sección con la imagen de la batería -->
-        <section>
-            <figure id="instrumento">
-                <img src="img/batery.webp" alt="Imágen de una batería">
-            </figure>
-        </section>
+      <!-- Segunda sección con los botones de sonido y sus teclas asociadas -->
+      <section class="botones">
+        <button class="qsy btn1">Crash</button>
+        <!-- <h2>()</h2> -->
+        <button class="qsy btn2">HitHat-Close</button>
+        <!-- <h2>S</h2> -->
+        <button class="qsy btn3">HitHat-Open</button>
+        <!-- <h2>D</h2> -->
+        <button class="qsy btn4">Kick</button>
+        <!-- <h2>F</h2> -->
+        <button class="qsy btn5">Ride</button>
+        <!-- <h2>G</h2> -->
+        <button class="qsy btn6">Snare</button>
+        <!-- <h2>H</h2> -->
+        <button class="qsy btn7">Tom-High</button>
+        <!-- <h2>J</h2> -->
+        <button class="qsy btn8">Tom-Low</button>
+        <!-- <h2>K</h2> -->
+        <button class="qsy btn9">Tom-Mid</button>
+        <!-- <h2>L</h2> -->
+      </section>
 
-        <!-- Segunda sección con los botones de sonido y sus teclas asociadas -->
-        <section class="botones">
+      <!-- Tercera sección con los botones de grabar, atrás, guardar y detener -->
+      <section class="herramientas">
+        <button id="grabar">Rec</button>
 
-            <button id="boton1">Crash</button> <h2>A</h2>
-            <button id="boton2">HitHat-Close</button> <h2>S</h2>
-            <button id="boton3" >HitHat-Open</button> <h2>D</h2>
-            <button id="boton4">Kick</button> <h2>F</h2>
-            <button id="boton5">Ride</button> <h2>G</h2>
-            <button id="boton6">Snare</button> <h2>H</h2>
-            <button id="boton7">Tom-High</button> <h2>J</h2> 
-            <button id="boton8">Tom-Low</button> <h2>K</h2>
-            <button id="boton9">Tom-Mid</button> <h2>L</h2>
-        
-        </section>
+        <!--Introducir botón de back que aparecerá unos segundos después de que se ejecute el rec-->
 
-        <!-- Tercera sección con los botones de grabar, atrás, guardar y detener -->
-        <section class="herramientas">
+        <button id="atras">Back</button>
 
-            <button id="grabar"> Rec </button>
-            
-            <!--Introducir botón de back que aparecerá unos segundos después de que se ejecute el rec-->
+        <!-- Botón para parar la grabación-->
+        <button id="parar">Stop</button>
 
-            <button id="atras"> Back </button>
-
-            <!-- Botón para parar la grabación--> 
-            <button id="parar"> Stop </button> 
-
-            <!-- Botón para descargar-->
-            <button id="descargar"> Download </button>
-
-        </section>
-        
+        <!-- Botón para descargar-->
+        <button id="descargar">Download</button>
+      </section>
     </main>
 
-<!-- Agregando Copyright al pie de página-->
-    <footer id="pie"> &copy; 2023 por Martina, Agustín, Marielly y Rocío. JSB21RT</footer>
-    
-    <script src="js/script.js"></script>
-    
-</body>
+    <!-- Agregando Copyright al pie de página-->
+    <footer id="pie">
+      &copy; 2023 por Martina, Agustín, Marielly y Rocío. JSB21RT
+    </footer>
+  </body>
 </html>
