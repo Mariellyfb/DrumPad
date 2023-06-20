@@ -1,21 +1,27 @@
 "use strict"
 
-let crashSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\crash.wav");
+const crashSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\crash.wav");
 
-let hihatcSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\hihat-close.wav");
+const hihatcSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\hihat-close.wav");
 
-let hihatoSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\hihat-open.wav");
+const hihatoSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\hihat-open.wav");
 
-let kickSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\kick.wav");
+const kickSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\kick.wav");
 
-let rideSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\ride.wav");
+const rideSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\ride.wav");
 
-let snareSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\snare.wav");
+const snareSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\snare.wav");
 
-let tomhSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-high.wav");
+const tomhSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-high.wav");
 
-let tomlSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-low.wav");
+const tomlSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-low.wav");
 
-let tommSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-mid.wav");
+const tommSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS-grupo-3\proyectoBateria\sounds\tom-mid.wav");
 
-const buttons = 
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        crashSound.play();
+    });
+  });
