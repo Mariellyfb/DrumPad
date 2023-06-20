@@ -20,5 +20,9 @@ const tommSound = new Audio ("C:\Users\User\OneDrive\Documents\GitHub\Bateria-JS
 
 const buttons = document.getElementsByClassName("botones");
 
-
-  
+// codigo que coje el primer boton en una variable y luego el sonido en otra y hace una funcion click
+  const button = document.getElementById("boton1");
+const sound1 = new Audio("./sounds/crash.wav");
+button.addEventListener("click", () => {
+    sound1.play();
+});
