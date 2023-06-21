@@ -1,4 +1,4 @@
-
+"use strict"
 
 // codigo que coje el primer boton en una variable y luego el sonido en otra y hace una funcion click
 
@@ -56,3 +56,5 @@ button9.addEventListener("click", () => {
     sound9.play();
 });
 
+// METER EVENTOS DE LOS BOTONES ADICIONALES
+// METER EVENTOS DE PORTADA
