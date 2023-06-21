@@ -56,6 +56,7 @@ button9.addEventListener("click", () => {
     sound9.play();
 });
 
+
 // METER EVENTOS DE LOS BOTONES ADICIONALES
 // METER EVENTOS DE PORTADA
 
@@ -84,3 +85,19 @@ function simularPulsacionTecla(tecla) {
     const event = new KeyboardEvent("keydown", { key: tecla });
     document.dispatchEvent(event);
 }*/
+
+document.addEventListener('keypress', (event) => {
+    const letraPulsada = String.fromCharCode(event.keyCode);
+    console.log("La tecla seleccionada es:", letraPulsada);
+    switch (letraPulsada) {
+        case 'C':
+        case 'c': 
+
+        let sound9 = new Audio("./sounds/tom-mid.wav");
+    
+        sound9.play();
+        console.log("play")
+        break;
+    
+    }
+});
