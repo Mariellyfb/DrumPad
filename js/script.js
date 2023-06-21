@@ -60,33 +60,7 @@ button9.addEventListener("click", () => {
 // METER EVENTOS DE LOS BOTONES ADICIONALES
 // METER EVENTOS DE PORTADA
 
-/* boton de back
-const backButton = document.getElementById("atras");
-backButton.addEventListener("click", () => {
-    window.location.href = "proyectoBateria\index.html";
-});/
-
-// funcion de pulsacion de tecla
-/const button9 = document.getElementById("boton9");
-const sound9 = new Audio("./sounds/tom-mid.wav");
-button9.addEventListener("click", () => {
-    simularPulsacionTecla('C');
-});
-
-document.addEventListener("keydown", (event) => {
-    const teclaPulsada = event.key;
-
-    if (teclaPulsada === 'C') {
-        sound9.play();
-    }
-});
-
-function simularPulsacionTecla(tecla) {
-    const event = new KeyboardEvent("keydown", { key: tecla });
-    document.dispatchEvent(event);
-}*/
-
-document.addEventListener('keypress', (event) => {
+document.addEventListener('keydown', (event) => {
     const letraPulsada = String.fromCharCode(event.keyCode);
     console.log("La tecla seleccionada es:", letraPulsada);
     switch (letraPulsada) {
@@ -174,3 +148,52 @@ document.addEventListener('keypress', (event) => {
     
     }
 });
+
+
+/*Probando a hacer el Rec y el stop y no funciona, pero se necesita hacer un tiempo y meterlo junto a la tecla presionada en ese tiempo en un objeto, despues este objeto es el mapa para replicar los sonidos */
+
+let recBtn = document.getElementById("grabar");
+recBtn.addEventListener('click', (event) => {
+
+getTimeElapsed();
+
+let recObject = {
+    time: [timeDiff] ,
+    key: [letraPulsada]
+}
+
+let recTime = recObject.time;
+let recKey = recObject.key;
+
+let stopBtn = document.getElementById
+("parar");
+stopBtn.addEventListener('click', (event) => {
+    if (event) {
+    event.preventDefault();
+    console.log("Acabas de realizar un click en el stop");
+    let ic = 0;
+    } else ic = 1
+});
+
+
+for (let i = 1; i != 1; i = ic){
+    recTime.push(timeDiff);
+    recKey.push(letraPulsada);
+    console.log(recObject);
+} 
+
+});
+
+function getTimeElapsed() {
+    const startTime = new Date(); // Obtiene la hora de inicio
+
+    setInterval(() => {
+      const currentTime = new Date(); // Obtiene la hora actual
+      const timeDiff = currentTime - startTime; // Calcula la diferencia de tiempo en milisegundos
+
+    console.log("la hora es:", timeDiff);
+    }, 5000); // Imprime cada 5 segundos
+};
+
+
+
