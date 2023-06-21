@@ -8,28 +8,45 @@
 
 <link rel="icon" href="https://img.icons8.com/?size=2x&id=21714&format=png" type="image/x-icon">
 
-<body>
-    <!-- header que tiene una sección con el título y link de play -->
+<link rel="stylesheet" href="css/style.css">
+
+<body class="portada">
+
+    <!-- header que tiene una sección con el link de play -->
     <header>
-        <h1>MY BATERY</h1>
         <nav>
             <section>
-                <li>
-                    <a href="batery.html"> Play </a>
-                </li>
+                
+                   <h1 class="play"><a href="batery.html" style="color: white;"> Play </a></h1>
+            
             </section>
         </nav>
     </header>
 
-    <!-- Introducción y explicación del juego (poner los botones del teclado asociados a los sonidos)-->
-    <main>
-        <h2>About My Batery</h2>
+    <!-- Introducción y explicación del juego-->
+    <main class="instrucciones">
+        <h2 class="titulo">About My Batery</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo delectus reiciendis eveniet pariatur praesentium voluptates vero distinctio animi beatae? Rem porro quibusdam nam quis dicta, aliquid voluptatum fugit sit eveniet!</p>
+        <p><strong>¡Enjoy playing!</strong></p>
+        <p>Con esta divertida aplicación, no sólo podrás escuchar los distintos sonidos de una batería REAL, si no que también podrás aprender a tocarla únicamente usando los botones de tu teclado siguiendo las siguientes instrucciones:</p>
+        <ul class="listaInstrucciones">
+            <li><strong>Crash</strong> &rightsquigarrow; Pulsa la letra "A" en tu teclado</li>
+            <li><strong>HitHat-Close</strong> &rightsquigarrow; Pulsa la letra "S" en tu teclado</li>
+            <li><strong>HitHat-Open</strong> &rightsquigarrow; Pulsa la letra "D" en tu teclado</li>
+            <li><strong>Kick</strong> &rightsquigarrow; Pulsa la letra "F" en tu teclado</li>
+            <li><strong>Ride</strong> &rightsquigarrow; Pulsa la letra "G" en tu teclado</li>
+            <li><strong>Snare</strong> &rightsquigarrow; Pulsa la letra "H" en tu teclado</li>
+            <li><strong>Tom-High</strong> &rightsquigarrow; Pulsa la letra "J" en tu teclado</li>
+            <li><strong>Tom-Low</strong> &rightsquigarrow; Pulsa la letra "K" en tu teclado</li>
+            <li><strong>Tom-Mid</strong> &rightsquigarrow; Pulsa la letra "L" en tu teclado</li>
+        </ul>
+        <p>Si lo prefieres, sólo con hacer click sobre el botón correspondiente al sonido que quieres reproducir, podrás escucharlo las veces que quieras.</p>
     </main>
 
    <!-- Agregando Copyright al pie de página-->
-   <footer id="pie"> &copy; 2023 por Martina, Agustín, Marielly y Rocío. JSB21RT</footer>
+   <footer class="piePortada"> &copy; 2023 por Martina, Agustín, Marielly y Rocío. JSB21RT</footer>
     
+   <script src="js/script.js"></script>
+
 </body>
 </html>
