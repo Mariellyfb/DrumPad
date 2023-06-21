@@ -98,6 +98,79 @@ document.addEventListener('keypress', (event) => {
         sound9.play();
         console.log("play")
         break;
+
+        case 'X':
+        case 'x': 
+    
+            let sound8 = new Audio("./sounds/tom-low.wav");
+        
+            sound8.play();
+            console.log("play")
+        break;
+
+        case 'Z':
+        case 'z': 
+        
+            let sound7 = new Audio("./sounds/tom-high.wav");
+            
+            sound7.play();
+            console.log("play")
+        break;
+
+        case 'D':
+        case 'd': 
+        
+            let sound6 = new Audio("./sounds/snare.wav");
+            
+            sound6.play();
+            console.log("play")
+        break;
+
+        case 'S':
+        case 's': 
+        
+            let sound5 = new Audio("./sounds/ride.wav");
+            
+            sound5.play();
+            console.log("play")
+        break;
+
+        case 'A':
+        case 'a': 
+        
+            let sound4 = new Audio("./sounds/kick.wav");
+            
+            sound4.play();
+            console.log("play")
+        break;
+
+        case 'E':
+        case 'e': 
+        
+            let sound3 = new Audio("./sounds/hihat-open.wav");
+            
+            sound3.play();
+            console.log("play")
+        break;
+
+        case 'W':
+        case 'w': 
+        
+            let sound2 = new Audio("./sounds/hihat-close.wav");
+            
+            sound2.play();
+            console.log("play")
+        break;
+
+        case 'Q':
+        case 'q': 
+        
+            let sound1 = new Audio("./sounds/crash.wav");
+            
+            sound1.play();
+            console.log("play")
+        break;
+
     
     }
 });
