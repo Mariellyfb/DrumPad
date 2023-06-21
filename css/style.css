@@ -28,55 +28,55 @@
   h1 {
     color: aliceblue;
   }
-  .botones {
+ 
+  .container {
     display: inline-grid;
     grid-gap: 2px;
     grid-template-columns: auto auto auto;
   }
-  
-  .qsy {
+
+  .botones {
     border: none;
     width: 90px;
     height: 90px;
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  .qsy:active,
+
+  .botones:active,
   .active {
     filter: brightness(125%);
   }
-  
-  .btn1 {
+
+  #btn1 {
     background-color: blueviolet;
   }
-  .btn2 {
+  #btn2 {
     background-color: blue;
   }
-  .btn3 {
+  #btn3 {
     background-color: aqua;
   }
-  .btn4 {
+  #btn4 {
     background-color: greenyellow;
   }
-  .btn5 {
+  #btn5 {
     background-color: rgb(255, 173, 20);
   }
-  .btn6 {
+  #btn6 {
     background-color: salmon;
   }
-  .btn7 {
+  #btn7 {
     background-color: rgb(220, 35, 35);
   }
-  
-  .btn8 {
+
+  #btn8 {
     background-color: rgb(59, 175, 59);
   }
-  
-  .btn9 {
+
+  #btn9 {
     background-color: gray;
   }
-  
   
   
   
