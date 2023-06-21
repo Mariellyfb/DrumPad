@@ -58,3 +58,29 @@ button9.addEventListener("click", () => {
 
 // METER EVENTOS DE LOS BOTONES ADICIONALES
 // METER EVENTOS DE PORTADA
+
+/* boton de back
+const backButton = document.getElementById("atras");
+backButton.addEventListener("click", () => {
+    window.location.href = "proyectoBateria\index.html";
+});/
+
+// funcion de pulsacion de tecla
+/const button9 = document.getElementById("boton9");
+const sound9 = new Audio("./sounds/tom-mid.wav");
+button9.addEventListener("click", () => {
+    simularPulsacionTecla('C');
+});
+
+document.addEventListener("keydown", (event) => {
+    const teclaPulsada = event.key;
+
+    if (teclaPulsada === 'C') {
+        sound9.play();
+    }
+});
+
+function simularPulsacionTecla(tecla) {
+    const event = new KeyboardEvent("keydown", { key: tecla });
+    document.dispatchEvent(event);
+}*/
