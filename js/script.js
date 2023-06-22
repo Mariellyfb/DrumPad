@@ -149,6 +149,14 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+// Obtener el botón y el contenido del botón desplegable
+const Btn = document.querySelector('.inst-btn');
+const Content = document.querySelector('.ul-content');
+
+// Mostrar/ocultar el contenido del botón desplegable al hacer clic en el botón
+Btn.addEventListener('click', function() {
+ Content.style.display = (Content.style.display === 'block') ? 'none' : 'block';
+});
 
 /*Probando a hacer el Rec y el stop y no funciona, pero se necesita hacer un tiempo y meterlo junto a la tecla presionada en ese tiempo en un objeto, despues este objeto es el mapa para replicar los sonidos */
 
