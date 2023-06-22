@@ -7,19 +7,28 @@
 /*css portada*/
 
 .portada {
-  background-image: url('https://img.freepik.com/vector-gratis/bola-discoteca-colorida-degradada_23-2148913433.jpg?size=626&ext=jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvqFM1tkpsqBWxevQYAnFftJjyAuIc1Fk5g&usqp=CAU');
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 600px;
+  background-color: white;
 }
 
-.play {
-  margin-top: 550px;
+#contPlay {
+  margin-top: 280px;
+  margin-left: 530px;
   font-size: 50px;
   font-family: fantasy;
 }
 
+.play {
+  text-decoration: none;
+  color: blue;
+}
+
+
 .instrucciones {
-  color: white;
+  color: blue;
   line-height: 1.5;
   float: left;
   font-size: 0.8rem;
@@ -35,7 +44,7 @@
 }
 
 .piePortada {
-  color: white;
+  color: black;
 }
 
 .listaInstrucciones {
