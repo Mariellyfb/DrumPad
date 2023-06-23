@@ -24,8 +24,25 @@
 .play {
   text-decoration: none;
   color: blue;
+  position: relative;
 }
 
+.play:hover{
+  color: fuchsia;
+  background-color: yellow;
+}
+
+.play:hover::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #00a0e8;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .instrucciones {
   color: blue;
