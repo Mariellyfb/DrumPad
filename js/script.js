@@ -25,47 +25,47 @@ const sound9 = new Audio("./sounds/tom-mid.wav");
 // codigo que coje el primer boton en una variable y luego el sonido en otra y hace una funcion click para que suenen cada boton
 
 button1.addEventListener("click", () => {
-    let sound1 = new Audio("./sounds/crash.wav");
+    
     sound1.play();
 });
 
 button2.addEventListener("click", () => {
-    let sound2 = new Audio("./sounds/crash.wav");
+    
     sound2.play();
 });
 
 button3.addEventListener("click", () => {
-    let sound3 = new Audio("./sounds/crash.wav");
+   
     sound3.play();
 });
 
 button4.addEventListener("click", () => {
-    let sound4 = new Audio("./sounds/crash.wav");
+   
     sound4.play();
 });
 
 button5.addEventListener("click", () => {
-    let sound5 = new Audio("./sounds/crash.wav");
+    
     sound5.play();
 });
 
 button6.addEventListener("click", () => {
-    let sound6 = new Audio("./sounds/crash.wav");
+    
     sound6.play();
 });
 
 button7.addEventListener("click", () => {
-    let sound7 = new Audio("./sounds/crash.wav");
+    
     sound7.play();
 });
 
 button8.addEventListener("click", () => {
-    let sound8 = new Audio("./sounds/crash.wav");
+   
     sound8.play();
 });
 
 button9.addEventListener("click", () => {
-    let sound9 = new Audio("./sounds/crash.wav");
+    
     
     sound9.play();
 });

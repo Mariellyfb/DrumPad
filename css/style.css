@@ -1,125 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
-/*css portada*/
-
-.portada {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvqFM1tkpsqBWxevQYAnFftJjyAuIc1Fk5g&usqp=CAU');
-  display: flexbox;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 600px;
-  background-color: white;
-}
-
-.titulo {
-  padding-bottom: 1.5rem;
-}
-
-.instrucciones {
-  color: blue;
-  display: flexbox;
-  line-height: 1.5;
-  float: left;
-  font-size: 0.8rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-bottom: 200px;
-  width: 250px;
-  margin-right: 900px;
-  margin-left: 30px;
-  margin-top: 70px;
-}
-
-.listaInstrucciones {
-  padding-left: 50px;
-}
-
-#contPlay {
-  margin-top: 280px;
-  margin-left: 530px;
-  font-size: 50px;
-  font-family: fantasy;
-}
-
-.play {
-  text-decoration: none;
-  color: blue;
-  display: flexbox;
-  position: relative;
-}
-
-.play:hover{
-  color: fuchsia;
-  background-color: yellow;
-}
-
-.play:hover::after,
-.play:hover::before{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: orange;
-  border-radius: 50%;
-  animation-name: burbuja;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.play:hover::after {
-  top: -10px;
-  left: 0;
-}
-
-.play:hover::before {
-  top: 5px;
-  right: 0;
-}
-
-@keyframes burbuja {
-  0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, -100px);
-    opacity: 0;
-  }
-}
-
-.piePortada {
-  color: black;
-  background-color: white;
-}
-
-@media screen and (min-width:400px) and (max-width: 799px){
-    
-  .play{
-    background-color: orange;
-  }
-
-  #contPlay{
-    margin-top: 100px;
-    margin-left: 120px;
-    font-size: 50px;
-    font-family: fantasy;
-  }
-
-  .instrucciones{
-    color: black;
-    font-family: fantasy;
-    margin-top: 140px;
-  }
-
-  .piePortada{
-    background-color: white;
-  }
-}
 
 /*First Movile*/
 body {
@@ -192,8 +71,8 @@ footer {
 
 .botones {
   border: none;
-  width: 110px;
-  height: 130px;
+  width: 5.2rem;
+  height: 6rem;
   border-radius: 5px;
   cursor: pointer;
 }
