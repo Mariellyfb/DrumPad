@@ -6,12 +6,12 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: rgb(43, 19, 67);
-  grid-template-rows: 15vh auto 5vh;
+  grid-template-rows: 4rem auto 4rem;
 }
 
 main {
   margin: auto;
-  display: block;
+  /*display: block;*/
 }
 
 #cabecera {
@@ -20,14 +20,17 @@ main {
   font-size: 3rem;
   margin-bottom: 3rem;
 }
+
 footer {
   font-size: 1.1rem;
   color: aliceblue;
   text-align: center;
-  position: absolute;
+  /*position: absolute;
   bottom: 0;
   width: 100%;
+  */
 }
+
 /*BOTON DESPLEGABLE*/
 .ul-content {
   list-style: none;
@@ -42,6 +45,7 @@ footer {
   width: 5vw;
   height: 5vh;
 }
+
 .inst-btn {
   display: flex;
   flex-wrap: wrap;
@@ -156,15 +160,18 @@ footer {
 /*///////////////MEDIA QUERIES/////////////////*/
 @media screen and (min-width: 600px) {
   body {
-    grid-template-columns: 25vw auto;
+    grid-template-columns: 5rem auto;
+    grid-template-rows: 4rem auto 4rem;
     grid-template-areas:
       'menu main'
       'menu main'
       'menu footer';
   }
+
   main {
     grid-area: main;
   }
+
   #cabecera {
     font-size: 3rem;
   }
@@ -173,13 +180,13 @@ footer {
     width: 180px;
     height: 200px;
   }
+
   footer {
+    border: 2px solid black;
+    grid-area: footer;
     font-size: 1.5rem;
     color: aliceblue;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 100px;
     width: 100%;
   }
 
@@ -224,10 +231,13 @@ footer {
       display: block;
     }
   }
+
   .ul-content li:hover {
     background-color: #257f75b6;
   }
+
   nav.container-inst {
+    grid-area: menu;
     grid-area: desplegable;
     display: flex;
     min-height: 100vh;
