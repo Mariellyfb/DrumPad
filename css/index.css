@@ -17,6 +17,34 @@
 /* css del body */
 
 body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Css del PLAY */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Fondo de pantalla */
+.portada {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvqFM1tkpsqBWxevQYAnFftJjyAuIc1Fk5g&usqp=CAU');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-color: white;
+}
+
+/* css del body */
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,37 +126,10 @@ footer {
     background-position: bottom;
   }
 
-<<<<<<< HEAD
-    .portada{
-        background-size: 700px;
-        background-position: bottom;
-    }
-
-    #contPlay{
-        font-size: 7rem;
-        margin-top: 42vh;
-    }
-
-    .play{
-        background-color: rgba(104, 48, 130, 0.771);
-        color: rgb(255, 255, 255);
-        border: rgba(112, 11, 167, 0.521) solid 3px;
-        box-shadow: 4px 4px 4px  rgb(80, 2, 94);
-        text-shadow: 0 0 5px rgb(7, 249, 209), 0 0 15px rgb(7, 249, 209), 0 0 30px rgb(7, 249, 209);
-    }
-    .play:hover{
-        background-color: rgba(7, 249, 209, 0.686);
-        color:rgb(255, 255, 255) ;
-        text-shadow: 0 0 5px rgba(104, 48, 130), 0 0 15px rgba(104, 48, 130),0 0 30px rgba(104, 48, 130);
-        border: solid 2px rgba(112, 11, 167, 0.521);
-        box-shadow: inset 0 0 5px rgba(104, 48, 130), 0 0 10px rgba(104, 48, 130);
-    }
-=======
   #contPlay {
     font-size: 7rem;
     margin-top: 20vh;
   }
->>>>>>> origin/revisado
 
   .play {
     background-color: rgba(104, 48, 130, 0.771);
