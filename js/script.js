@@ -15,6 +15,8 @@ const backElement = document.getElementById('atras');
 const recElement = document.getElementById('grabar');
 const playElement = document.getElementById('play');
 
+let noteArr = [];
+
 let recording = false;
 
 let recStartTime;
@@ -193,7 +195,7 @@ backElement.addEventListener('click', (event) => {
 });
 
 recElement.addEventListener('click', toggleRec);
-playElement.addEventListener('click', toggleRec);
+playElement.addEventListener('click', playSong);
 
 function redirectToOtherPage(page) {
   window.location.href = page;
@@ -215,11 +217,19 @@ function isRecording() {
 function startRec() {
   recStartTime = Date.now();
   songNotes = [];
+  addNote(songNotes.key, songNotes.startTime);
   playElement.classList.remove('show');
 }
 
+function addNote(key, time) {
+  noteArr = {
+    key: key,
+    startTime: time,
+  };
+}
+
 function stopRec() {
-  playSong();
+  // playSong();
   playElement.classList.add('show');
 }
 
