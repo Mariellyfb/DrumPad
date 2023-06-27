@@ -15,8 +15,6 @@ const backElement = document.getElementById('atras');
 const recElement = document.getElementById('grabar');
 const playElement = document.getElementById('play');
 
-let noteArr = [];
-
 let recording = false;
 
 let recStartTime;
@@ -181,11 +179,6 @@ document.addEventListener('keyup', (event) => {
   }
 });
 
-// Mostrar/ocultar el contenido del botón desplegable al hacer clic en el botón
-Btn.addEventListener('click', function () {
-  Content.style.display = Content.style.display === 'block' ? 'none' : 'block';
-});
-
 //Funciones
 
 // funcion de redirigir a otra pag con boton Back
@@ -217,19 +210,11 @@ function isRecording() {
 function startRec() {
   recStartTime = Date.now();
   songNotes = [];
-  addNote(songNotes.key, songNotes.startTime);
   playElement.classList.remove('show');
 }
 
-function addNote(key, time) {
-  noteArr = {
-    key: key,
-    startTime: time,
-  };
-}
-
 function stopRec() {
-  // playSong();
+  //playSong();
   playElement.classList.add('show');
 }
 
@@ -261,6 +246,6 @@ function readPlay() {
       clearInterval(playInterval);
     }
 
-    timePlay += 500;
-  }, 500);
+    timePlay += 10;
+  }, 10);
 }
