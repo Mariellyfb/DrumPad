@@ -39,27 +39,27 @@
 
     <!-- Main que contiene 3 secciones -->
     <main>
-      <h1 id="cabecera">MY BATERY</h1>
+      <h1 id="cabecera">DrumPad</h1>
    
         <!-- Segunda sección con los botones de sonido y sus teclas asociadas -->
         <section class="container">
-          <button id="btn1"  class="botones">Crash</button>
+          <button id="btn1"  class="botones data-sound">Crash (Q)</button>
           <!-- <h2>()</h2> -->
-          <button id="btn2"   class="botones">HitHat-Close</button>
+          <button id="btn2"   class="botones data-sound">HitHat-Close (W)</button>
           <!-- <h2>S</h2> -->
-          <button id="btn3"   class="botones">HitHat-Open</button>
+          <button id="btn3"   class="botones data-sound">HitHat-Open (E)</button>
           <!-- <h2>D</h2> -->
-          <button id="btn4"   class="botones">Kick</button>
+          <button id="btn4"   class="botones data-sound">Kick (A)</button>
           <!-- <h2>F</h2> -->
-          <button id="btn5"   class="botones">Ride</button>
+          <button id="btn5"   class="botones data-sound">Ride (S)</button>
           <!-- <h2>G</h2> -->
-          <button id="btn6"   class="botones">Snare</button>
+          <button id="btn6"   class="botones data-sound">Snare (D)</button>
           <!-- <h2>H</h2> -->
-          <button id="btn7"   class="botones">Tom-High</button>
+          <button id="btn7"   class="botones data-sound">Tom-High (Z)</button>
           <!-- <h2>J</h2> -->
-          <button id="btn8"   class="botones">Tom-Low</button>
+          <button id="btn8"   class="botones data-sound">Tom-Low (X)</button>
           <!-- <h2>K</h2> -->
-          <button id="btn9"   class="botones">Tom-Mid</button>
+          <button id="btn9"   class="botones data-sound">Tom-Mid (C)</button>
           <!-- <h2>L</h2> -->
         </section>
   
@@ -67,11 +67,12 @@
 
       <!-- Tercera sección con los botones de grabar, atrás, guardar y detener -->
       <section class="herramientas">
-        <!-- <button id="grabar">Rec</button> -->
+        <button id="grabar" class="btn rec-btn"><a href="#">Rec</a></button> 
+        <button id="play" class="btn play-btn "><a href="#">Play</a></button>
 
         <!--Introducir botón de back que aparecerá unos segundos después de que se ejecute el rec-->
 
-        <button id="atras"><a href="index.html">Back</a></button>
+        <button id="atras" class="btn back-btn"><a href="index.html">Back</a></button>
 
         <!-- Botón para parar la grabación-->
       <!--   <button id="parar">Stop</button> -->

@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   border: 0;
@@ -16,7 +16,6 @@ body {
     'piepag';
 
   background-color: rgb(43, 19, 67);
-  
 }
 
 main {
@@ -34,12 +33,13 @@ nav.container-inst {
   margin-bottom: 3rem;
   font-weight: lighter;
   font-family: 'Fasthand', cursive;
-  text-shadow: 0px 0px 5px rgb(237, 5, 229), 0px 0px 15px rgb(237, 5, 229), 0px 0px 30px rgb(237, 5, 229) ;
+  text-shadow: 0px 0px 5px rgb(237, 5, 229), 0px 0px 15px rgb(237, 5, 229),
+    0px 0px 30px rgb(237, 5, 229);
   margin-bottom: 2.3rem;
   border: 2.5px solid white;
   border-radius: 30px;
-  box-shadow: inset 0 0 5px rgb(237, 5, 229), inset 0 0 15px rgb(237, 5, 229), 0 0 5px rgb(237, 5, 229), 0 0 15px rgb(237, 5, 229);
-
+  box-shadow: inset 0 0 5px rgb(237, 5, 229), inset 0 0 15px rgb(237, 5, 229),
+    0 0 5px rgb(237, 5, 229), 0 0 15px rgb(237, 5, 229);
 }
 footer {
   padding-top: 2rem;
@@ -48,7 +48,8 @@ footer {
   color: aliceblue;
   text-align: center;
   font-family: 'Fasthand', cursive;
-  text-shadow: 0px 0px 5px rgb(237, 5, 229), 0px 0px 15px rgb(237, 5, 229), 0px 0px 30px rgb(237, 5, 229) ;
+  text-shadow: 0px 0px 5px rgb(237, 5, 229), 0px 0px 15px rgb(237, 5, 229),
+    0px 0px 30px rgb(237, 5, 229);
 }
 /*BOTON DESPLEGABLE*/
 
@@ -58,13 +59,13 @@ ul.ul-content {
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
   z-index: 1;
   align-items: center;
-  display: flex; 
+  display: flex;
   flex-direction: row;
 }
 
 .inst-btn {
- width: 100vw;
- justify-content: center;  
+  width: 100vw;
+  justify-content: center;
   background-color: #1da78266;
   color: rgb(255, 255, 255);
   padding: 0.5rem;
@@ -77,9 +78,9 @@ ul.ul-content {
   text-align: center;
   border-right: 1px solid rgba(255, 255, 255, 0.608);
 }
-li:last-child{
+li:last-child {
   border: none;
- }
+}
 /*CSS BATERY*/
 
 .container {
@@ -89,8 +90,8 @@ li:last-child{
   border: 3px solid white;
   padding: 1rem;
   border-radius: 20px;
-  box-shadow: inset 0 0 5px rgb(237, 5, 229),inset 0 0 15px rgb(237, 5, 229), 0 0 5px rgb(237, 5, 229), 0 0 20px rgb(237, 5, 229);
-
+  box-shadow: inset 0 0 5px rgb(237, 5, 229), inset 0 0 15px rgb(237, 5, 229),
+    0 0 5px rgb(237, 5, 229), 0 0 20px rgb(237, 5, 229);
 }
 
 .botones {
@@ -101,8 +102,8 @@ li:last-child{
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Fasthand', cursive;
-    font-weight: bold;
-    text-shadow: 0 0 5px white, 0 0 15px white, 0 0 30px white ;
+  font-weight: bold;
+  text-shadow: 0 0 5px white, 0 0 15px white, 0 0 30px white;
 }
 
 .botones:active,
@@ -114,8 +115,7 @@ li:last-child{
   background-color: blueviolet;
 }
 #btn2 {
-  background-color:  rgb(243, 6, 207);
-  ;
+  background-color: rgb(243, 6, 207);
 }
 #btn3 {
   background-color: rgb(0, 204, 255);
@@ -142,8 +142,20 @@ li:last-child{
 }
 
 /* BOTON BACK*/
-#atras {
+.rec-btn.active {
+  background-color: red;
+}
+.play-btn {
+  display: none;
+}
+
+.play-btn.show {
+  display: block;
+}
+
+.btn {
   margin-top: 2rem;
+
   background-color: #43a39d;
   color: #fff;
   padding: 10px 20px;
@@ -153,7 +165,7 @@ li:last-child{
   overflow: hidden;
 }
 
-#atras a {
+.btn a {
   text-decoration: none;
   color: inherit;
   transition: transform 0.3s ease-in-out;
@@ -162,7 +174,7 @@ li:last-child{
   z-index: 2;
 }
 
-#atras::before {
+.btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -174,18 +186,18 @@ li:last-child{
   z-index: 1;
 }
 
-#atras:hover::before {
+.btn:hover::before {
   left: 0;
 }
 
-#atras:hover a {
+.btn:hover a {
   transform: translateX(10px);
 }
 
 /*//////MEDIA QUERIES/////////*/
 @media screen and (min-width: 600px) {
   body {
-    grid-template-columns: 10rem auto ;
+    grid-template-columns: 10rem auto;
     grid-template-areas:
       'menu main'
       'menu main'
@@ -193,7 +205,6 @@ li:last-child{
   }
   main {
     grid-area: main;
-   
   }
   #cabecera {
     font-size: 3rem;
@@ -214,10 +225,10 @@ li:last-child{
     align-self: center;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    width: 1.5em; 
+    width: 1.5em;
     height: 100vh;
-     font-size: 1.5rem;
-    letter-spacing: 0.5rem; 
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
     background-color: #2cbd749f;
     color: rgb(255, 255, 255);
     border: none;
@@ -249,7 +260,7 @@ li:last-child{
     display: flex;
     min-height: 100vh;
   }
-  #atras{
+  #atras {
     width: 10rem;
     height: 4rem;
     font-size: x-large;

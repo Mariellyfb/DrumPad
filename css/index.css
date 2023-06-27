@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,7 +25,7 @@ body {
 /* Css del PLAY */
 
 main {
-    height: 70vh;
+  height: 70vh;
 }
 
 #contPlay {
@@ -46,7 +46,7 @@ main {
   transition: all 0.3s ease;
 }
 
-.play:hover{
+.play:hover {
   color: fuchsia;
   background-color: yellow;
   border: 2px solid rgb(164, 9, 164);
@@ -55,12 +55,13 @@ main {
 }
 
 .play:hover::after,
-.play:hover::before{
-  content: "";
+.play:hover::before {
+  content: '';
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: orange;border-radius: 50%;
+  background-color: orange;
+  border-radius: 50%;
   animation-name: burbuja;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -91,14 +92,15 @@ main {
 /* Css de las instrucciones */
 
 header {
-    height: 30vh;
+  height: 30vh;
 }
 
 .container {
-    margin-top: 1rem;
-    text-align: center;
-    box-shadow: 5px 5px 10px rgb(91, 144, 190);
-    border: solid blue 2px; border-radius: 30px;
+  margin-top: 1rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(91, 144, 190);
+  border: solid blue 2px;
+  border-radius: 30px;
 }
 
 .titulo {
@@ -117,10 +119,10 @@ header {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-left: 10vw;
   margin-right: 10vw;
-} 
+}
 
 /* Css footer */
-  footer {
+footer {
   color: black;
   background-color: white;
   padding: 20px;
@@ -135,30 +137,30 @@ header {
 
 /* adaptacion a pantalla grande */
 @media screen and (min-width: 750px) {
+  .portada {
+    background-size: 700px;
+    background-position: bottom;
+  }
 
-    .portada{
-        background-size: 700px;
-        background-position: bottom;
-    }
+  #contPlay {
+    font-size: 7rem;
+    margin-top: 42vh;
+  }
 
-    #contPlay{
-        font-size: 7rem;
-        margin-top: 42vh;
-    }
-
-    .play{
-        background-color: rgba(104, 48, 130, 0.771);
-        color: rgb(255, 255, 255);
-        border: rgba(112, 11, 167, 0.521) solid 3px;
-        box-shadow: 4px 4px 4px  rgb(80, 2, 94);
-        text-shadow: 0 0 5px rgb(7, 249, 209), 0 0 15px rgb(7, 249, 209), 0 0 30px rgb(7, 249, 209);
-    }
-    .play:hover{
-        background-color: rgba(7, 249, 209, 0.686);
-        color:rgb(255, 255, 255) ;
-        text-shadow: 0 0 5px rgba(104, 48, 130), 0 0 15px rgba(104, 48, 130),0 0 30px rgba(104, 48, 130);
-        border: solid 2px rgba(112, 11, 167, 0.521);
-        box-shadow: inset 0 0 5px rgba(104, 48, 130), 0 0 10px rgba(104, 48, 130);
-    }
-
+  .play {
+    background-color: rgba(104, 48, 130, 0.771);
+    color: rgb(255, 255, 255);
+    border: rgba(112, 11, 167, 0.521) solid 3px;
+    box-shadow: 4px 4px 4px rgb(80, 2, 94);
+    text-shadow: 0 0 5px rgb(7, 249, 209), 0 0 15px rgb(7, 249, 209),
+      0 0 30px rgb(7, 249, 209);
+  }
+  .play:hover {
+    background-color: rgba(7, 249, 209, 0.686);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(104, 48, 130), 0 0 15px rgba(104, 48, 130),
+      0 0 30px rgba(104, 48, 130);
+    border: solid 2px rgba(112, 11, 167, 0.521);
+    box-shadow: inset 0 0 5px rgba(104, 48, 130), 0 0 10px rgba(104, 48, 130);
+  }
 }
