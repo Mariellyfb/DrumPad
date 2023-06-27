@@ -8,10 +8,11 @@
 /*First Movile*/
 body {
   display: grid;
-  grid-template-rows: 10rem auto 1rem;
+  grid-template-rows: 10rem auto 3rem 1rem;
   grid-template-areas:
     'header'
     'contenido'
+    'botones'
     'piepag';
 
   background-color: rgb(43, 19, 67);
@@ -26,7 +27,6 @@ header {
   color: aliceblue;
   margin-top: 2rem;
   font-size: 1rem;
-  width: 100%;
 }
 
 #cabecera {
@@ -40,6 +40,15 @@ header {
   border-radius: 30px;
   box-shadow: inset 0 0 5px rgb(237, 5, 229), inset 0 0 15px rgb(237, 5, 229),
     0 0 5px rgb(237, 5, 229), 0 0 15px rgb(237, 5, 229);
+}
+.herramientas {
+  justify-content: center;
+  grid-area: botones;
+  height: 4rem;
+  font-size: x-large;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 footer {
   padding-top: 2rem;
@@ -166,7 +175,7 @@ footer {
 /*//////MEDIA QUERIES/////////*/
 @media screen and (min-width: 600px) {
   #cabecera {
-    font-size: 2remrem;
+    font-size: 3rem;
   }
   .botones {
     font-size: 30px;
@@ -178,9 +187,7 @@ footer {
     color: aliceblue;
   }
 
-  /* .btn {
-    width: 10rem;
-    height: 4rem;
-    font-size: x-large;
-  } */
+  .herramientas a {
+    font-size: 2rem;
+  }
 }
